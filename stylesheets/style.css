@@ -54,54 +54,44 @@ a:hover {
   text-decoration: underline
 }
 
+h1, h2 {
+  color: #333;
+}
+
 h1 {
   font-size: 70px;
   line-height: 70px;
   margin: 20px 0;
-  text-align: center;
 }
 
-h1 span {
+h1.masthead span {
   letter-spacing: 4px;
 }
 
-h2 {
-  margin: 15px 0;
+article h1 {
+  font-weight: 900;
+  margin: 15px 0 10px 0;
 }
 
-h2.frontpage-title {
+h1.frontpage-title {
   font-size: 50px;
   line-height: 60px;
+  margin-top: 0;
 }
 
-h2.featured-title, h2.opinion {
+h1.featured-title, h1.opinion, h1.headline-title {
+  letter-spacing: -0.05em
+}
+
+h1.featured-title, h1.opinion {
   font-size: 20px;
   line-height: 26px;
   float: none;
-  letter-spacing: -1px;
 }
 
-h2.headline-title {
+h1.headline-title {
   font-size: 16px;
   line-height: 21px;
-  letter-spacing: -1px;
-}
-
-h2.opinion {
-  margin-bottom: 10px;
-}
-
-h1 {
-  font-family: 'Oswald', sans-serif;
-  font-weight: 700;
-}
-
-h2 {
-  font-weight: 900;
-}
-
-h1, h2 {
-  color: #333;
 }
 
 .author {
@@ -116,6 +106,9 @@ h1, h2 {
   margin: 0 auto;
   width: 549px;
   text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  text-align: center;
 }
 
 .tagline {
@@ -151,10 +144,6 @@ article {
 .frontpage-copy {
   float: right;
   width: 28%;
-}
-
-.frontpage-copy h2 {
-  margin-top: 0;
 }
 
 .half-column {
@@ -208,8 +197,8 @@ article {
   float: right;
 }
 
-.headline-copy h2 {
-  margin: 0 0 8px 0;
+.headline-copy h1 {
+  margin: 0 0 5px 0;
 }
 
 footer {
@@ -237,9 +226,9 @@ footer p {
 }
 
 
-/*accio scroll*/
+/* scroll*/
 
-.accio {
+.scroll {
   opacity: 0;
 }
 
